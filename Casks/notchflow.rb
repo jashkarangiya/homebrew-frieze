@@ -7,7 +7,7 @@ cask "notchflow" do
   desc "Developer dashboard that lives in the MacBook notch"
   homepage "https://github.com/jashkarangiya/homebrew-notchflow"
 
-  depends_on macos: ">= :ventura"
+  depends_on macos: :ventura
 
   app "NotchFlow.app"
 
