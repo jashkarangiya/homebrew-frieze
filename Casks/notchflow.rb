@@ -1,6 +1,6 @@
 cask "notchflow" do
-  version "0.6.0"
-  sha256 "295e1afa1e5f03915611d9c8472e62da792c871774d8939a5e7746dd9efd950b"
+  version "0.7.0"
+  sha256 "e2f7e23ebb500c685b25cd7c314cb0920ab9ea4dcbb3820cf41f59245831fbee"
 
   url "https://github.com/jashkarangiya/homebrew-notchflow/releases/download/v#{version}/NotchFlow.zip"
   name "NotchFlow"
