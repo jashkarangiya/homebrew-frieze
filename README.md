@@ -1,57 +1,33 @@
-# NotchFlow
+# Frieze
 
-A developer dashboard that lives in your MacBook's **notch** — running dev servers,
-git status, Docker, live system & network stats, clipboard, and more. Click the
-notch to open it.
+A Mac app that lives in the notch: clipboard, shelf, media, system stats and developer tools.
 
-This repo is the **Homebrew tap** (install + release binaries). Install with:
+This repository is the Homebrew tap and the download page for Frieze releases.
 
 ## Install
 
 ```bash
-brew install --cask jashkarangiya/notchflow/notchflow
+brew install --cask jashkarangiya/frieze/frieze
 ```
 
-### First launch (one time)
+Or download the latest `Frieze-<version>.dmg` from [Releases](https://github.com/jashkarangiya/homebrew-frieze/releases/latest) and drag Frieze into Applications.
 
-NotchFlow isn't notarized by Apple yet, so macOS asks once. Either:
+Requires macOS 14 Sonoma or later.
 
-- Right-click **NotchFlow** in `/Applications` → **Open** → **Open**, **or**
-- run:
+## First launch
 
-  ```bash
-  xattr -dr com.apple.quarantine "/Applications/NotchFlow.app"
-  open -a NotchFlow
-  ```
+Frieze is not notarized yet. If macOS blocks it, run once:
 
-NotchFlow has **no Dock icon** — it lives in the notch and the menu bar. Hover the
-notch, then click to open the panel.
+```bash
+xattr -dr com.apple.quarantine "/Applications/Frieze.app"
+```
 
 ## Update
 
-```bash
-brew upgrade --cask notchflow
-```
+Frieze updates itself. With Homebrew you can also run `brew upgrade --cask frieze`.
 
 ## Uninstall
 
 ```bash
-brew uninstall --cask notchflow
+brew uninstall --zap --cask frieze
 ```
-
-## Troubleshooting
-
-- **"tap is not trusted" prompt** (newer Homebrew) — allow it once:
-
-  ```bash
-  brew trust --cask jashkarangiya/notchflow/notchflow
-  ```
-
-  The install proceeds either way.
-- Warnings that mention *other* taps (mongodb, supabase, periphery, …) are
-  unrelated to NotchFlow — they're from other things you have installed.
-
-## Requirements
-
-- macOS 13 (Ventura) or later
-- MacBook with a hardware notch (MacBook Pro 14"/16", MacBook Air M2+)
